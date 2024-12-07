@@ -102,15 +102,35 @@ async def unauthorize_user(ctx, member: discord.Member):
 async def add_score(ctx, member: discord.Member, category: str):
     """Add one point to a category (Authorized only)"""
     if not is_authorized(ctx):
-        # await ctx.send("You are not authorized to use this command!")
         await handle_unauthorized(ctx)
         return
 
     category = category.lower()
+    
+    # Validate category first
     if category not in leaderboard_bot.valid_categories:
         await ctx.send(f"Invalid category! Valid categories are: spedness, helpfulness")
         return
+    
+    # Check if trying to add points to the bot
+    if member.id == bot.user.id:
+        if category == "spedness":
+            await ctx.send("Don't take me for a fool, you Nigesh😡🤬")
+            return
+        elif category == "helpfulness":
+            total_points = leaderboard_bot.modify_points(str(member.id), category, True)
+            embed = discord.Embed(
+                title="Point Added!",
+                description="Thank you for recognizing my help! 🤖❤️",
+                color=discord.Color.green(),
+                timestamp=datetime.now()
+            )
+            embed.add_field(name="Category", value=category.title(), inline=True)
+            embed.add_field(name="New Total", value=str(total_points), inline=True)
+            await ctx.send(embed=embed)
+            return
 
+    # Regular point addition for non-bot users
     total_points = leaderboard_bot.modify_points(str(member.id), category, True)
     
     embed = discord.Embed(
@@ -187,8 +207,9 @@ async def show_leaderboard(ctx, category: str):
     
     await ctx.send(embed=embed)
 
+# all members should be able see the specific scores
 @bot.command(name="stats")
-async def show_stats(ctx, member: discord.Member = None):
+async def show_stats(ctx, member: discord.Member = True):
     """Show stats for a user"""
     if not is_authorized(ctx):
         # await ctx.send("You are not authorized to use this command!")

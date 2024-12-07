@@ -1,7 +1,7 @@
 {
     "549264707165487130": {
         "categories": {
-            "spedness": 5
+            "spedness": 4
         },
         "history": [
             {
@@ -28,6 +28,11 @@
                 "category": "spedness",
                 "points": 1,
                 "timestamp": "2024-11-30 22:08:46.548390"
+            },
+            {
+                "category": "spedness",
+                "points": -1,
+                "timestamp": "2024-12-07 13:58:41.529844"
             }
         ]
     },
@@ -150,7 +155,7 @@
     },
     "1311873679722024961": {
         "categories": {
-            "spedness": 3
+            "spedness": 0
         },
         "history": [
             {
@@ -167,6 +172,21 @@
                 "category": "spedness",
                 "points": 1,
                 "timestamp": "2024-11-30 22:09:33.556599"
+            },
+            {
+                "category": "spedness",
+                "points": -1,
+                "timestamp": "2024-12-07 13:57:45.174763"
+            },
+            {
+                "category": "spedness",
+                "points": -1,
+                "timestamp": "2024-12-07 13:57:56.278826"
+            },
+            {
+                "category": "spedness",
+                "points": -1,
+                "timestamp": "2024-12-07 13:58:05.032572"
             }
         ]
     }

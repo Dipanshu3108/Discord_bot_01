@@ -1,7 +1,7 @@
 {
     "549264707165487130": {
         "categories": {
-            "spedness": 4
+            "spedness": 6
         },
         "history": [
             {
@@ -31,14 +31,14 @@
             },
             {
                 "category": "spedness",
-                "points": -1,
-                "timestamp": "2024-12-07 13:58:41.529844"
+                "points": 1,
+                "timestamp": "2025-03-09T18:04"
             }
         ]
     },
     "501023264857128962": {
         "categories": {
-            "spedness": 5,
+            "spedness": 6,
             "helpfulness": 0
         },
         "history": [
@@ -86,6 +86,11 @@
                 "category": "helpfulness",
                 "points": -1,
                 "timestamp": "2024-11-28 20:06:54.490916"
+            },
+            {
+                "category": "spedness",
+                "points": 1,
+                "timestamp": "2025-03-09T18:18"
             }
         ]
     },
@@ -155,7 +160,8 @@
     },
     "1311873679722024961": {
         "categories": {
-            "spedness": 0
+            "spedness": -1,
+            "helpfulness": 1
         },
         "history": [
             {
@@ -174,19 +180,29 @@
                 "timestamp": "2024-11-30 22:09:33.556599"
             },
             {
-                "category": "spedness",
-                "points": -1,
-                "timestamp": "2024-12-07 13:57:45.174763"
+                "category": "helpfulness",
+                "points": 1,
+                "timestamp": "2025-03-09T18:19"
             },
             {
                 "category": "spedness",
                 "points": -1,
-                "timestamp": "2024-12-07 13:57:56.278826"
+                "timestamp": "2025-03-09T18:19"
             },
             {
                 "category": "spedness",
                 "points": -1,
-                "timestamp": "2024-12-07 13:58:05.032572"
+                "timestamp": "2025-03-09T18:19"
+            },
+            {
+                "category": "spedness",
+                "points": -1,
+                "timestamp": "2025-03-09T18:19"
+            },
+            {
+                "category": "spedness",
+                "points": -1,
+                "timestamp": "2025-03-09T18:19"
             }
         ]
     }
